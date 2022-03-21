@@ -26,4 +26,28 @@ new Swiper(".menu__swiper", {
   },
 });
 
+new Swiper(".cards__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 14,
+  modules: [Pagination],
+  pagination: {
+    el: '.cards__pagination',
+    clickable: true 
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    576:{
+      slidesPerView: 2,
+      spaceBetween: 10,
+    }
+  },
+});
+
 
