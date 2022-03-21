@@ -14,14 +14,6 @@
         @include media(576){
             column-gap: 5px;
         }
-        img{
-            @include media(576){
-                width: 30px;
-            }
-            @include media(350){
-                width: 25px;
-            }
-        }
         span{
             font-family: 'TypeMates';
             font-style: normal;
@@ -30,10 +22,7 @@
             line-height: 24px;
             color: #FFFFFF;
             @include media(576){
-                font-size: 16px;
-            }
-            @include media(360){
-                font-size: 14px;
+                display: none;
             }
         }
     }
@@ -71,20 +60,7 @@
         align-items: center;
         padding-left: 12px;
         padding-right: 8px;
-        @include media(576){
-            width: 170px;
-            height: 40px;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-        @include media(576){
-            width: 150px;
-        }
-        button{
-            img{
-                width: 15px;
-            }
-        }
+        column-gap: 5px;
     }
     &__input{
         background: none;

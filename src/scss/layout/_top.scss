@@ -74,6 +74,11 @@
             padding-top: 10px;
             z-index: 1;
             display: none;
+            background: #151B29;
+            padding: 5px 12px;
+            border-radius: 6px;
+            box-shadow: 0 0 15px #151b29;
+            top: 120%;
             &.active{
                 display: block;
             }
