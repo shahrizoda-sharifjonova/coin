@@ -1,0 +1,104 @@
+.header{
+    background: #1C243850;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        @include media(576){
+            column-gap: 5px;
+        }
+        img{
+            @include media(576){
+                width: 30px;
+            }
+            @include media(350){
+                width: 25px;
+            }
+        }
+        span{
+            font-family: 'TypeMates';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            color: #FFFFFF;
+            @include media(576){
+                font-size: 16px;
+            }
+            @include media(360){
+                font-size: 14px;
+            }
+        }
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        column-gap: 26px;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        @include media(768){
+            display: none;
+        }
+    }
+    &__icon{
+        img{
+            background: #1C2438;
+            padding: 8px 7px;
+            border-radius: 50%;
+            transition: 200ms ease;
+            &:hover{
+                background: darken($color: #1C2438, $amount: 1.5);
+            }
+        }
+    }
+    &__form{
+        background: #192233;
+        border-radius: 8px;
+        width: 240px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 12px;
+        padding-right: 8px;
+        @include media(576){
+            width: 170px;
+            height: 40px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        @include media(576){
+            width: 150px;
+        }
+        button{
+            img{
+                width: 15px;
+            }
+        }
+    }
+    &__input{
+        background: none;
+        border: none;
+        color: #fff;
+        width: 100%;
+        &::placeholder{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #C6C8CD;
+            @include media(576){
+                font-size: 14px;
+            }
+        }
+    }
+}
