@@ -1,7 +1,7 @@
 .top{
     background: #1C2438;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     @include media(992){
         display: none;
@@ -19,14 +19,13 @@
     }
     &__li{
         font-weight: 600;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 19px;
         color: #C6C8CD;
         display: flex;
         align-items: center;
         @include media(1200){
             font-weight: 400;
-            font-size: 12px;
         }
         &:nth-of-type(3){
             img{
