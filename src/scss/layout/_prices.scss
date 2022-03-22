@@ -1,0 +1,82 @@
+.prices{
+    &__top{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &-title{
+            margin-bottom: 15px;
+        }
+        &-desc{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #C6C8CD;            
+        }
+        &-span{
+            color: #E53D35;
+        }
+        &-link{
+            text-decoration: underline;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #C6C8CD; 
+        }
+    }
+    &__action{
+        display: flex;
+        align-items: center;
+        column-gap: 13px;
+    }
+    &__label{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #C6C8CD;
+        cursor: pointer;
+    }
+    &__chk{
+        position: relative;
+        width: 64px;
+        height: 26px;
+        input[type=checkbox]{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            opacity: 0;
+            cursor: pointer;
+            &:checked{
+                &~div::before{
+                    transform: translate(37px, -50%);
+                }
+            }
+        }
+        &>div{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #8D99AE50;
+            border-radius: 50px;
+            &::before{
+                content: '';
+                position: absolute;
+                transition: 200ms ease;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                left: 2px;
+                width: 23px;
+                height: 23px;
+                background: url('../img/prices-icon-check.svg'), #2B2D42;
+                background-size: 16px 16px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

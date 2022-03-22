@@ -567,6 +567,114 @@
      object-fit: cover;
 }
 
+.prices__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prices__top-title {
+  margin-bottom: 15px;
+}
+
+.prices__top-desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C6C8CD;
+}
+
+.prices__top-span {
+  color: #E53D35;
+}
+
+.prices__top-link {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C6C8CD;
+}
+
+.prices__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 13px;
+     -moz-column-gap: 13px;
+          column-gap: 13px;
+}
+
+.prices__label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C6C8CD;
+  cursor: pointer;
+}
+
+.prices__chk {
+  position: relative;
+  width: 64px;
+  height: 26px;
+}
+
+.prices__chk input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.prices__chk input[type=checkbox]:checked ~ div::before {
+  -webkit-transform: translate(37px, -50%);
+      -ms-transform: translate(37px, -50%);
+          transform: translate(37px, -50%);
+}
+
+.prices__chk > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #8D99AE50;
+  border-radius: 50px;
+}
+
+.prices__chk > div::before {
+  content: "";
+  position: absolute;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  left: 2px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/prices-icon-check.svg"), #2B2D42;
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -619,6 +727,14 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
 }
 
 @media (min-width: 576px) {
