@@ -28,7 +28,8 @@ body{
 a{
     text-decoration: none;
 }
-ul{
+ul,
+li{
     list-style: none;
 }
 button{
@@ -42,4 +43,10 @@ button{
     font-size: 24px;
     line-height: 33px;
     color: #FFFFFF;
+    @include media(992){
+        font-size: 20px;
+    }
+    @include media(576){
+        font-size: 18px;
+    }
 }

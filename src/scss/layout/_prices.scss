@@ -1,8 +1,14 @@
 .prices{
+    padding-bottom: 64px;
     &__top{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        margin-bottom: 35px;
+        @include media(768){
+            flex-direction: column;
+            row-gap: 15px;
+        }
         &-title{
             margin-bottom: 15px;
         }
@@ -10,7 +16,14 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 22px;
-            color: #C6C8CD;            
+            color: #C6C8CD;  
+            @include media(992){
+                max-width: 400px;
+                width: 100%;
+            }      
+            @include media(576){
+                font-size: 14px;
+            }    
         }
         &-span{
             color: #E53D35;
@@ -76,6 +89,157 @@
                 background-size: 16px 16px;
                 background-position: center;
                 background-repeat: no-repeat;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 11px;
+        @include media(1200){
+            flex-direction: column;
+            row-gap: 35px;
+        }
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+        @include media(1400){
+            font-size: 12px;
+        }
+    }
+    &__item{
+        max-width: calc(33.333% - 7px);
+        width: calc(33.3333% - 7px);
+        background: #191F30;
+        border-radius: 8px;
+        padding: 16px;
+        @include media(1400){
+            padding: 10px;
+        }
+        @include media(1200){
+            max-width: 100%;
+            width: 100%;
+            padding: 20px 25px;
+        }
+        @include media(576){
+            padding: 15px;
+        }
+        &-icon{
+            &_top{
+                transform: rotate(-180deg);
+            }
+            &_red{
+                svg{
+                    path{
+                        fill: #E53B35;
+                    }
+                }
+            }
+            &_green{
+                svg{
+                    path{
+                        fill: #16C784;
+                    }
+                }
+            }
+        }
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 19px;
+            &-logo{
+                display: flex;
+                align-items: center;
+                column-gap: 7px;
+            }
+            &-links{
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                img{
+                    margin-bottom: -4px;
+                }
+            }
+            &-span{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                color: #5F86FB;
+                @include media(1400){
+                    font-size: 12px;
+                }
+            }
+        }
+        &-content{
+            .prices__item-list{
+                &:nth-of-type(1){
+                    margin-bottom: 13px;
+                    padding-bottom: 13px;
+                    border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+                }
+                &:nth-of-type(2){
+                    margin-bottom: 13px;
+                    padding-bottom: 13px;
+                    border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+                }
+            }
+        }
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-infos{
+            display: inline-block;
+        }
+        &-links{
+            display: flex;
+
+        }
+        &-li{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            @include media(1200){
+                column-gap: 5px;
+            }
+        }
+        &-num{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 150%;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        &-span{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: #FFFFFF;    
+            border: 0.5px solid #FFFFFF;
+            border-radius: 2px;      
+            padding: 3px 6px;
+            opacity: 0.5;  
+            @include media(1400){
+                font-size: 10px;
+            }
+        }
+        &-prasent{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 150%;
+            color: #FFFFFF;
+            @include media(1400){
+                font-size: 12px;
+            }
+            &_red{
+                color: #E53B35;
+            }
+            &_green{
+                color: #16C784;
             }
         }
     }
