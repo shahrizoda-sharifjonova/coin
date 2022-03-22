@@ -1,6 +1,10 @@
 .cards{
     padding-top: 33px;
     padding-bottom: 64px;
+    @include media(576){
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     &__content{
         position: relative;
         margin-top: 25px;

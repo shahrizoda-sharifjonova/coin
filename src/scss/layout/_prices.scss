@@ -1,5 +1,8 @@
 .prices{
     padding-bottom: 64px;
+    @include media(576){
+        padding-bottom: 30px;
+    }
     &__top{
         display: flex;
         align-items: flex-start;
@@ -8,6 +11,9 @@
         @include media(768){
             flex-direction: column;
             row-gap: 15px;
+        }
+        @include media(576){
+            margin-bottom: 20px;
         }
         &-title{
             margin-bottom: 15px;
@@ -99,6 +105,9 @@
         @include media(1200){
             flex-direction: column;
             row-gap: 35px;
+        }
+        @include media(576){
+            row-gap: 20px;
         }
     }
     &__subtitle{
