@@ -1,0 +1,39 @@
+.desc{
+    padding-bottom: 64px;
+    @include media(576){
+        padding-bottom: 30px;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        @include media(576){
+            margin-bottom: 15px;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        @include media(576){
+            row-gap: 10px;
+        }
+        @include media(370){
+            row-gap: 6px;
+        }
+    }
+    &__p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        @include media(576){
+            font-size: 13px;
+            font-weight: normal;
+        }
+        @include media(370){
+            font-size: 12px;
+        }
+    }
+}

@@ -1493,6 +1493,41 @@
           column-gap: 32px;
 }
 
+.desc {
+  padding-bottom: 64px;
+}
+
+.desc__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.desc__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
+.desc__p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2021,6 +2056,23 @@ button {
     padding-top: 20px;
   }
 
+  .desc {
+    padding-bottom: 30px;
+  }
+
+  .desc__top {
+    margin-bottom: 15px;
+  }
+
+  .desc__content {
+    row-gap: 10px;
+  }
+
+  .desc__p {
+    font-size: 13px;
+    font-weight: normal;
+  }
+
   .title {
     font-size: 18px;
   }
@@ -2029,6 +2081,16 @@ button {
 @media (max-width: 380px) {
   .mooner__info-li {
     width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .desc__content {
+    row-gap: 6px;
+  }
+
+  .desc__p {
+    font-size: 12px;
   }
 }
 
