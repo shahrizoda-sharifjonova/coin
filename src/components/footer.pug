@@ -1,4 +1,56 @@
 mixin footer()
     footer.footer  
         .footer__body.container 
+            .footer__container
+                .footer__col 
+                    a(href="#!").header__logo
+                        img(src="@img/logo.svg", alt="" draggable="false" loading="lazy")
+                        span CoinLogotype
+                    form(action="").header__form
+                        input(type="text" placeholder="Search").header__input
+                        button(type="submit")
+                            img(src="@img/header-icon-search.svg", alt="" draggable="false" loading="lazy")
+                    .header__icons 
+                        a(href="https://telegram.com").header__icon
+                            img(src="@img/header-icon-twitter.svg", alt="" draggable="false" loading="lazy")
+                        a(href="https://twitter.com").header__icon
+                            img(src="@img/header-icon-telegram.svg", alt="" draggable="false" loading="lazy")
+                        a(href="https://discord.com").header__icon
+                            img(src="@img/header-icon-discord.svg", alt="" draggable="false" loading="lazy")
+                .footer__content 
+                    .footer__item 
+                        span.footer__subtitle Products
+                        ul.footer__list 
+                            li.footer__li #[a(href="#!").footer__link Blockchain Explorer]
+                            li.footer__li #[a(href="#!").footer__link Crypto API ]
+                            li.footer__li #[a(href="#!").footer__link Crypto Indices]
+                            li.footer__li #[a(href="#!").footer__link Jobs Board]
+                            li.footer__li #[a(href="#!").footer__link Stemap ]
+                    .footer__item 
+                        span.footer__subtitle Company
+                        ul.footer__list 
+                            li.footer__li #[a(href="#!").footer__link About us]
+                            li.footer__li #[a(href="#!").footer__link Terms of use]
+                            li.footer__li #[a(href="#!").footer__link Privacy Policy]
+                            li.footer__li #[a(href="#!").footer__link Community Rules]
+                            li.footer__li #[a(href="#!").footer__link Disclaimer]
+                            li.footer__li #[a(href="#!").footer__link Methodology]
+                            li.footer__li #[a(href="#!").footer__link Careers]
+                    .footer__item 
+                        span.footer__subtitle Support
+                        ul.footer__list 
+                            li.footer__li #[a(href="#!").footer__link Request Form]
+                            li.footer__li #[a(href="#!").footer__link Contact Support]
+                            li.footer__li #[a(href="#!").footer__link FAQ]
+                            li.footer__li #[a(href="#!").footer__link Glossary]
+                    .footer__item 
+                        span.footer__subtitle Socials
+                        ul.footer__list 
+                            li.footer__li #[a(href="#!").footer__link Facebook]
+                            li.footer__li #[a(href="#!").footer__link Twitter]
+                            li.footer__li #[a(href="#!").footer__link Telegram]
+                            li.footer__li #[a(href="#!").footer__link Instagram]
+                            li.footer__li #[a(href="#!").footer__link Interactive Chat]
+            p.footer__p © 2022 CoinMarketCap. All rights reserved
             
+                         

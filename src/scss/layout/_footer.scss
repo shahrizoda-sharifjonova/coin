@@ -1,3 +1,99 @@
 .footer{
-    
+    background: #1C243850;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include media(576){
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        @include media(992){
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+    &__content{
+        display: flex;
+        column-gap: 63px;
+        padding-top: 6px;
+        @include media(1200){
+            column-gap: 40px;
+            justify-content: space-between;
+        }
+        @include media(576){
+            flex-wrap: wrap;
+            row-gap: 30px;
+            justify-content: center;
+        }
+    }
+    &__col{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        @include media(992){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+    &__item{
+        &:nth-of-type(2){
+            order: -1;
+        }
+        @include media(576){
+            width: calc(50% - 30px);
+        }
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        display: block;
+        margin-bottom: 12px;
+        @include media(576){
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 240%;
+        color: #C6C8CD;
+        &:hover{
+            text-decoration: underline;
+        }
+        @include media(576){
+            font-size: 13px;
+        }
+    }
+    &__p{
+        margin-top: 154px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        @include media(1200){
+            margin-top: 100px;
+        }
+        @include media(768){
+            margin-top: 50px;
+        }
+        @include media(576){
+            font-weight: 400;
+            font-size: 13px;
+        }
+        @include media(360){
+            margin-top: 30px;
+        }
+    }
 }
