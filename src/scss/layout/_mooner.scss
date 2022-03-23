@@ -1,0 +1,204 @@
+.mooner{
+    &__body{
+        background: linear-gradient(180deg, #212430 0%, rgba(25, 31, 48, 0) 100%);
+        border-radius: 8px;
+        margin-bottom: 64px;
+        padding: 23px 26px 40px 23px;
+        @include media(576){
+            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+        padding-bottom: 27px;
+        @include media(992){
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 10px;
+        }
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        column-gap: 14px;
+        cursor: pointer;
+        img{
+            @include media(576){
+                width: 45px;
+            }
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        color: #FFFFFF;
+        @include media(576){
+            font-size: 20px;
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        @include media(768){
+            flex-direction: column;
+            row-gap: 25px;
+            align-items: flex-start;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        @include media(576){
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+    }
+    &__li{
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;   
+        cursor: pointer;
+        @include media(767){
+            font-size: 14px;
+            font-weight: normal;
+        }
+        @include media(576){
+            width: calc(50% - 12px);
+        }
+        &-span{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: #FFFFFF;
+            margin-right: 7px;
+        }     
+    }
+    &__button{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #FFFFFF;
+        background: #3861FB;
+        border-radius: 8px;
+        width: 152px;
+        height: 50px;
+        &:hover{
+            background: darken($color: #3861FB, $amount: 1.5);
+        }
+        @include media(576){
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        column-gap: 20px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+        @include media(992){
+            flex-direction: column;
+            row-gap: 25px;
+            align-items: flex-start;
+        }
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    &__input{
+        display: flex;
+        width: 817px;
+        padding: 16px;
+        background: #192233;
+        border-radius: 8px;
+        @include media(1400){
+            width: 560px;
+        }
+        @include media(1200){
+            width: 440px;
+        }
+        @include media(992){
+            width: 100%;
+        }
+        input{
+            background: none;
+            border: none;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #C6C8CD;
+            width: 100%;
+            @include media(576){
+                font-size: 13px;
+            }
+        }
+        button{
+            &:active{
+                opacity: 0.5;
+            }
+        }
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background: #3861FB;
+        border-radius: 8px;
+        padding: 13px 20px;
+        &:hover{
+            background: darken($color: #3861FB, $amount: 1.5);
+        }
+        @include media(576){
+            padding: 10px 15px;
+            font-size: 12px;
+        }
+        img{
+            @include media(576){
+                width: 20px;
+            }
+        }
+    }
+    &__info{
+        padding-top: 39px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 32px;  
+        @include media(768){
+            column-gap: 20px;
+            justify-content: space-between;
+        } 
+        @include media(576){
+            padding-top: 20px;
+        }
+        &-li{
+            @include media(380){
+                width: 100%;
+            }
+        }
+    }
+}

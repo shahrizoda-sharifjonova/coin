@@ -1289,6 +1289,210 @@
   background: #315bfb;
 }
 
+.mooner__body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#212430), to(rgba(25, 31, 48, 0)));
+  background: -o-linear-gradient(top, #212430 0%, rgba(25, 31, 48, 0) 100%);
+  background: linear-gradient(180deg, #212430 0%, rgba(25, 31, 48, 0) 100%);
+  border-radius: 8px;
+  margin-bottom: 64px;
+  padding: 23px 26px 40px 23px;
+}
+
+.mooner__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 27px;
+}
+
+.mooner__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px;
+  cursor: pointer;
+}
+
+.mooner__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.mooner__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+
+.mooner__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+
+.mooner__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.mooner__li-span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-right: 7px;
+}
+
+.mooner__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #3861FB;
+  border-radius: 8px;
+  width: 152px;
+  height: 50px;
+}
+
+.mooner__button:hover {
+  background: #315bfb;
+}
+
+.mooner__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+}
+
+.mooner__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.mooner__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 817px;
+  padding: 16px;
+  background: #192233;
+  border-radius: 8px;
+}
+
+.mooner__input input {
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C6C8CD;
+  width: 100%;
+}
+
+.mooner__input button:active {
+  opacity: 0.5;
+}
+
+.mooner__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #3861FB;
+  border-radius: 8px;
+  padding: 13px 20px;
+}
+
+.mooner__btn:hover {
+  background: #315bfb;
+}
+
+.mooner__info {
+  padding-top: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1402,6 +1606,10 @@ button {
   .prices__item-prasent {
     font-size: 12px;
   }
+
+  .mooner__input {
+    width: 560px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1445,6 +1653,10 @@ button {
     -webkit-column-gap: 5px;
        -moz-column-gap: 5px;
             column-gap: 5px;
+  }
+
+  .mooner__input {
+    width: 440px;
   }
 }
 
@@ -1537,6 +1749,32 @@ button {
     row-gap: 24px;
   }
 
+  .mooner__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 10px;
+  }
+
+  .mooner__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 25px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .mooner__input {
+    width: 100%;
+  }
+
   .title {
     font-size: 20px;
   }
@@ -1569,6 +1807,33 @@ button {
     font-weight: 400;
     font-size: 14px;
     padding: 10px 10px;
+  }
+
+  .mooner__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 25px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .mooner__info {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .mooner__li {
+    font-size: 14px;
+    font-weight: normal;
   }
 }
 
@@ -1710,13 +1975,79 @@ button {
     margin-top: 30px;
   }
 
+  .mooner__body {
+    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+
+  .mooner__logo img {
+    width: 45px;
+  }
+
+  .mooner__title {
+    font-size: 20px;
+  }
+
+  .mooner__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .mooner__li {
+    width: calc(50% - 12px);
+  }
+
+  .mooner__button {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .mooner__input input {
+    font-size: 13px;
+  }
+
+  .mooner__btn {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .mooner__btn img {
+    width: 20px;
+  }
+
+  .mooner__info {
+    padding-top: 20px;
+  }
+
   .title {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .mooner__info-li {
+    width: 100%;
   }
 }
 
 @media (max-width: 360px) {
   .footer__p {
     margin-top: 30px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .quotes__items {
+    background: #191F30;
+    color: white;
+  }
+
+  .quotes__subtitle,
+  .quotes__desc,
+  .quotes__p,
+  .quotes__symbol-p {
+    color: rgba(255, 255, 255, 0.85);
   }
 }

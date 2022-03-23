@@ -1,0 +1,26 @@
+mixin mooner()
+    .mooner 
+        .mooner__body.container 
+            .mooner__top 
+                .mooner__logo 
+                    img(src="@img/mooner-icon-1.svg", alt="" draggable="false" loading="lazy")
+                    h2.mooner__title CoinMooner Token
+                .mooner__item 
+                    button(type="button").mooner__button MOONER
+                    ul.mooner__list 
+                        li.mooner__li #[span.mooner__li-span Votes ] 59 721
+                        li.mooner__li #[span.mooner__li-span Today ] 69
+                        li.mooner__li #[span.mooner__li-span 1h ] #[img(src="@img/mooner-icon-up_green.svg", alt="" draggable="false" loading="lazy")] +0.07%
+                        li.mooner__li #[span.mooner__li-span 24h ] #[img(src="@img/mooner-icon-down_red.svg", alt="" draggable="false" loading="lazy")] +2.03% 
+            .mooner__content 
+                span.mooner__subtitle Binance Smart Chain:
+                .mooner__input
+                    input(value="0x34e942859469c9db9c22f4eaf866e2c2401bb795" readonly)#clip
+                    button(data-clipboard-target="#clip").clip
+                        img(src="@img/mooner-icon-2.svg", alt="" draggable="false" loading="lazy")
+                button(type="button").mooner__btn #[img(src="@img/mooner-icon-3.svg", alt="" draggable="false" loading="lazy")] ADD TO WALLET
+            ul.mooner__list.mooner__info
+                li.mooner__li.mooner__info-li #[span.mooner__li-span.mooner__info-span Market cap ] $359,762.67
+                li.mooner__li.mooner__info-li #[span.mooner__li-span.mooner__info-span Price ] $0.007045752208
+                li.mooner__li.mooner__info-li #[span.mooner__li-span.mooner__info-span Launch ] 2021-10-27
+                 

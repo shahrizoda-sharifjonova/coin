@@ -61,4 +61,4 @@ coinsItem.forEach(el => {
   })
 });
 
-
+new ClipboardJS('.clip');
