@@ -5,11 +5,19 @@
     }
     &__title{
         margin-bottom: 35px;
+        @include media(576){
+            margin-bottom: 0;
+        }
     }
     &__top{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        @include media(576){
+            flex-direction: column;
+            row-gap: 10px;
+            margin-bottom: 30px;
+        }
     }
     &__button{
         display: flex;
@@ -49,6 +57,24 @@
             font-size: 14px;
             font-weight: 500;
         }
+        &_coins{
+            width: 178px;
+        }
+        &_symbol{
+            width: 85px;
+        }
+        &_hour{
+            width: 80px;
+        }
+        &_dollar{
+            width: 130px;
+        }
+        &_calendar{
+            width: 100px;
+        }
+        &_upvotes{
+            width: 91px;
+        }
     }
     &__content{
         @include media(992){
@@ -77,6 +103,24 @@
             width: max-content;
             padding-right: 26px;
         }
+    }
+    &__coins{
+        width: 178px;
+    }
+    &__symbol{
+        width: 85px;
+    }
+    &__hour{
+        width: 80px;
+    }
+    &__money{
+        width: 130px;
+    }
+    &__calendar{
+        width: 100px;
+    }
+    &__upvotes{
+        width: 91px;
     }
     &__coins{
         display: flex;

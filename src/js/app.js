@@ -50,4 +50,15 @@ new Swiper(".cards__swiper", {
   },
 });
 
+const coinsItem = document.querySelectorAll('.coins__item');
+
+coinsItem.forEach(el => {
+  el.addEventListener('click', (e)=>{
+    coinsItem.forEach(el => {
+      el.classList.remove('active')
+    });
+    el.classList.add('active')
+  })
+});
+
 

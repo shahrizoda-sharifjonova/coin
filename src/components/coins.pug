@@ -1,0 +1,19 @@
+mixin coins()
+    .coins  
+        .coins__body.container 
+            .coins__top
+                h2.coins__title.title Coins can be upvoted every 24h
+                button(type="buttom").coins__button Update #[img(src="@img/quotes-icon-update.svg", alt="" draggable="false" loading="lazy")]
+            .coins__items 
+                .coins__list-container
+                    .coins__list 
+                        button(type="button").coins__item.active #[img(src="@img/coins-icon-1.svg", alt="" draggable="false" loading="lazy")] Today’s Hot
+                        button(type="button").coins__item #[img(src="@img/coins-icon-2.svg", alt="" draggable="false" loading="lazy")] New
+                        button(type="button").coins__item #[img(src="@img/coins-icon-3.svg", alt="" draggable="false" loading="lazy")] All Time Best
+                        button(type="button").coins__item #[img(src="@img/coins-icon-4.svg", alt="" draggable="false" loading="lazy")] 24h Gainer
+                form(action="").header__form
+                    input(type="text" placeholder="Search").header__input
+                    button(type="submit")
+                        img(src="@img/header-icon-search.svg", alt="" draggable="false" loading="lazy")
+            +content
+            a(href="#!").coins__btn Show More 

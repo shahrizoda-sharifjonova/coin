@@ -918,6 +918,30 @@
   color: #FFFFFF;
 }
 
+.quotes__li_coins {
+  width: 178px;
+}
+
+.quotes__li_symbol {
+  width: 85px;
+}
+
+.quotes__li_hour {
+  width: 80px;
+}
+
+.quotes__li_dollar {
+  width: 130px;
+}
+
+.quotes__li_calendar {
+  width: 100px;
+}
+
+.quotes__li_upvotes {
+  width: 91px;
+}
+
 .quotes__items {
   background: #E9F0F8;
 }
@@ -934,6 +958,30 @@
           align-items: center;
   padding: 15px 45px 15px 23px;
   border-bottom: 0.5px solid rgba(25, 31, 48, 0.05);
+}
+
+.quotes__coins {
+  width: 178px;
+}
+
+.quotes__symbol {
+  width: 85px;
+}
+
+.quotes__hour {
+  width: 80px;
+}
+
+.quotes__money {
+  width: 130px;
+}
+
+.quotes__calendar {
+  width: 100px;
+}
+
+.quotes__upvotes {
+  width: 91px;
 }
 
 .quotes__coins {
@@ -1037,6 +1085,127 @@
 
 .quotes__btn-span {
   margin-right: 7px;
+}
+
+.coins {
+  padding-bottom: 64px;
+}
+
+.coins__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.coins__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C6C8CD;
+}
+
+.coins__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 23px;
+}
+
+.coins__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+
+.coins__list-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.coins__list-container::-webkit-scrollbar {
+  display: none;
+}
+
+.coins__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding: 16px 20px;
+}
+
+.coins__item.active {
+  background: #3861FB;
+  border-radius: 8px;
+}
+
+.coins__item.active:hover {
+  background: #315bfb;
+}
+
+.coins__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #3861FB;
+  border-radius: 8px;
+  width: 152px;
+  height: 50px;
+  margin-top: 52px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coins__btn:hover {
+  background: #315bfb;
 }
 
 * {
@@ -1239,6 +1408,17 @@ button {
     padding-right: 26px;
   }
 
+  .coins__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 24px;
+  }
+
   .title {
     font-size: 20px;
   }
@@ -1255,6 +1435,18 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 15px;
+  }
+
+  .coins__list {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .coins__item {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 10px;
   }
 }
 
@@ -1325,6 +1517,43 @@ button {
 
   .quotes {
     padding-bottom: 30px;
+  }
+
+  .quotes__title {
+    margin-bottom: 0;
+  }
+
+  .quotes__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .coins {
+    padding-bottom: 30px;
+  }
+
+  .coins__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 30px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .coins__item {
+    font-size: 13px;
+  }
+
+  .coins__btn {
+    margin-top: 30px;
   }
 
   .title {
