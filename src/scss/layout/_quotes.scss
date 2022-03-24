@@ -3,6 +3,12 @@
     @include media(576){
         padding-bottom: 30px;
     }
+    &__content{
+        @include media(576){
+            width: calc(100% + 30px);
+            margin-left: -15px;
+        }
+    }
     &__title{
         margin-bottom: 35px;
         @include media(576){
@@ -31,18 +37,30 @@
     &__header{
         background: #191F30;
         border-radius: 8px 8px 0 0;
-        padding: 16px 31px 16px 23px;
+        padding: 16px 23px 16px 23px;
         @include media(992){
-            min-width: max-content;
             width: 100%;
+            grid-template-columns: 37.5% 0 20% 20% 0 22.5%;
+        }
+        @include media(576){
+            padding: 0;
         }
     }
     &__list{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        grid-template-columns: 25% 15% 15% 15% 15% 15%;
         @include media(992){
-            column-gap: 50px;
+            width: 100%;
+            grid-template-columns: 37.5% 0 20% 20% 0 22.5%;
+        }
+        @include media(576){
+            padding: 15px 2px;
         }
     }
     &__li{
@@ -58,69 +76,130 @@
             font-weight: 500;
         }
         &_coins{
-            width: 178px;
+            width: 100%;
         }
         &_symbol{
-            width: 85px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media(992){
+                width: 0;
+                overflow: hidden;
+            }
         }
         &_hour{
-            width: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media(768){
+                img{
+                    display: none;
+                }
+            }
         }
         &_dollar{
-            width: 130px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media(768){
+                img{
+                    display: none;
+                }
+            }
         }
         &_calendar{
-            width: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media(992){
+                width: 0;
+                overflow: hidden;
+            }
         }
         &_upvotes{
-            width: 91px;
-        }
-    }
-    &__content{
-        @include media(992){
-            overflow-x: auto;
-            scrollbar-width: none;
-            &::-webkit-scrollbar { 
-                display: none; 
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media(768){
+                img{
+                    display: none;
+                }
             }
         }
     }
     &__items{
         background: #E9F0F8;
+        border-radius: 0 0 8px 8px;
         @include media(992){
-            min-width: max-content;
+            min-width: 100%;
             width: 100%;
         }
     }
     &__item{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        justify-items: center;
         align-items: center;
-        padding: 15px 45px 15px 23px;
+        position: relative;
+        grid-template-columns: 25% 15% 15% 15% 15% 15%;
         border-bottom: 0.5px solid rgba(25, 31, 48, 0.05);
+        padding: 15px 23px 15px 23px;
         @include media(992){
-            column-gap: 50px;
-            width: max-content;
             padding-right: 26px;
+            grid-template-columns: 37.5% 0 20% 20% 0 22.5%;
+        }
+        @include media(576){
+            padding: 15px 2px;
         }
     }
     &__coins{
-        width: 178px;
+        width: 100%;
+        overflow: hidden;
     }
     &__symbol{
-        width: 85px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        @include media(992){
+            width: 0;
+            overflow: hidden;
+        }
     }
     &__hour{
-        width: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
     &__money{
-        width: 130px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
     &__calendar{
-        width: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(992){
+            width: 0;
+            overflow: hidden;
+        }
     }
     &__upvotes{
-        width: 91px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
     &__coins{
         display: flex;
@@ -133,6 +212,11 @@
         min-width: 36px;
         width: 36px;
         height: 36px;
+        @include media(576){
+            width: 25px;
+            height: 25px;
+            min-width: 25px;
+        }
     }
     &__texts{
         display: flex;
@@ -187,13 +271,15 @@
         padding: 7px 9px;
         border: 1px solid #16C784;
         border-radius: 4px;
-        min-width: 90px;
-        width: 100%;
+        width: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
         &-span{
             margin-right: 7px;
+            @include media(576){
+                margin-right: 2px;
+            }
         }
     }
 }

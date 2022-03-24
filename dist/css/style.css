@@ -979,7 +979,7 @@
 .quotes__header {
   background: #191F30;
   border-radius: 8px 8px 0 0;
-  padding: 16px 31px 16px 23px;
+  padding: 16px 23px 16px 23px;
 }
 
 .quotes__list {
@@ -992,6 +992,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  -ms-grid-columns: 25% 15% 15% 15% 15% 15%;
+  grid-template-columns: 25% 15% 15% 15% 15% 15%;
 }
 
 .quotes__li {
@@ -1011,69 +1018,164 @@
 }
 
 .quotes__li_coins {
-  width: 178px;
+  width: 100%;
 }
 
 .quotes__li_symbol {
-  width: 85px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .quotes__li_hour {
-  width: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .quotes__li_dollar {
-  width: 130px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .quotes__li_calendar {
-  width: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .quotes__li_upvotes {
-  width: 91px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .quotes__items {
   background: #E9F0F8;
+  border-radius: 0 0 8px 8px;
 }
 
 .quotes__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 45px 15px 23px;
+  position: relative;
+  -ms-grid-columns: 25% 15% 15% 15% 15% 15%;
+  grid-template-columns: 25% 15% 15% 15% 15% 15%;
   border-bottom: 0.5px solid rgba(25, 31, 48, 0.05);
+  padding: 15px 23px 15px 23px;
 }
 
 .quotes__coins {
-  width: 178px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .quotes__symbol {
-  width: 85px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 .quotes__hour {
-  width: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 .quotes__money {
-  width: 130px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 .quotes__calendar {
-  width: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .quotes__upvotes {
-  width: 91px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .quotes__coins {
@@ -1162,8 +1264,7 @@
   padding: 7px 9px;
   border: 1px solid #16C784;
   border-radius: 4px;
-  min-width: 90px;
-  width: 100%;
+  width: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2077,16 +2178,15 @@ button {
   }
 
   .quotes__header {
-    min-width: -webkit-max-content;
-    min-width: -moz-max-content;
-    min-width: max-content;
     width: 100%;
+    -ms-grid-columns: 37.5% 0 20% 20% 0 22.5%;
+    grid-template-columns: 37.5% 0 20% 20% 0 22.5%;
   }
 
   .quotes__list {
-    -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
-            column-gap: 50px;
+    width: 100%;
+    -ms-grid-columns: 37.5% 0 20% 20% 0 22.5%;
+    grid-template-columns: 37.5% 0 20% 20% 0 22.5%;
   }
 
   .quotes__li {
@@ -2094,30 +2194,35 @@ button {
     font-weight: 500;
   }
 
-  .quotes__content {
-    overflow-x: auto;
-    scrollbar-width: none;
+  .quotes__li_symbol {
+    width: 0;
+    overflow: hidden;
   }
 
-  .quotes__content::-webkit-scrollbar {
-    display: none;
+  .quotes__li_calendar {
+    width: 0;
+    overflow: hidden;
   }
 
   .quotes__items {
-    min-width: -webkit-max-content;
-    min-width: -moz-max-content;
-    min-width: max-content;
+    min-width: 100%;
     width: 100%;
   }
 
   .quotes__item {
-    -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
-            column-gap: 50px;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     padding-right: 26px;
+    -ms-grid-columns: 37.5% 0 20% 20% 0 22.5%;
+    grid-template-columns: 37.5% 0 20% 20% 0 22.5%;
+  }
+
+  .quotes__symbol {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .quotes__calendar {
+    width: 0;
+    overflow: hidden;
   }
 
   .coins__items {
@@ -2185,6 +2290,18 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 15px;
+  }
+
+  .quotes__li_hour img {
+    display: none;
+  }
+
+  .quotes__li_dollar img {
+    display: none;
+  }
+
+  .quotes__li_upvotes img {
+    display: none;
   }
 
   .coins__list {
@@ -2328,6 +2445,11 @@ button {
     padding-bottom: 30px;
   }
 
+  .quotes__content {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+
   .quotes__title {
     margin-bottom: 0;
   }
@@ -2339,6 +2461,28 @@ button {
             flex-direction: column;
     row-gap: 10px;
     margin-bottom: 30px;
+  }
+
+  .quotes__header {
+    padding: 0;
+  }
+
+  .quotes__list {
+    padding: 15px 2px;
+  }
+
+  .quotes__item {
+    padding: 15px 2px;
+  }
+
+  .quotes__square {
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+  }
+
+  .quotes__btn-span {
+    margin-right: 2px;
   }
 
   .coins {
