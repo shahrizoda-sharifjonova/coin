@@ -919,11 +919,10 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  color: #FFFFFF;
-  border: 0.5px solid #FFFFFF;
+  color: #303544;
+  border: 0.5px solid #303544;
   border-radius: 2px;
   padding: 3px 6px;
-  opacity: 0.5;
 }
 
 .prices__item-prasent {
