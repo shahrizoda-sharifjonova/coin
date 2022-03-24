@@ -1,0 +1,183 @@
+.contact{
+    padding-top: 33px;
+    padding-bottom: 123px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    &__item{
+        width: calc(50% - 15px);
+        background: #191F30;
+        border-radius: 8px;
+        padding: 18px 26px 52px 26px;
+        &-header{
+            padding-bottom: 20px;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+            @include media(576){
+                padding-bottom: 15px;
+            }
+        }
+        @include media(992){
+            width: 100%;
+        }
+        @include media(576){
+            padding: 15px 15px 30px 15px;
+        }
+        &:nth-of-type(1){
+            &:last-child{
+                flex-direction: column;
+                align-items: flex-end;
+                row-gap: 5px;
+            }
+        }
+    }
+    input,
+    textarea{
+        background: #192233;
+        border-radius: 8px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+        @include media(576){
+            font-size: 13px;
+        }
+        &::placeholder{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #C6C8CD;
+            @include media(576){
+                font-size: 13px;
+            }
+        }
+    }
+    textarea{
+        resize: none;
+        height: 196px;
+        padding-top: 15px;
+        @include media(576){
+            height: 150px;
+        }
+    }
+    .custom-select {
+        position: relative;
+        font-family: Arial;
+      }
+      .custom-select select {
+        display: none; /*hide original SELECT element: */
+        user-select: none;
+      }
+      .select-selected {
+        background: #192233;
+        border-radius: 8px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #C6C8CD;
+        @include media(576){
+            font-size: 14px;
+        }
+      }
+      .select-selected:after {
+        position: absolute;
+        background: url(../img/contact-icon-arrow.svg);
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12px;
+        width: 16px;
+        height: 16px;
+      }
+      .select-selected.select-arrow-active:after {
+        transform: rotate(180deg) translateY(-50%);
+        top: 20%;
+      }
+      .select-items div,.select-selected {
+        color: #ffffff;
+        padding: 8px 16px;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #C6C8CD;     
+        @include media(576){
+            font-size: 14px;
+        } 
+    }
+      .select-items {
+        position: absolute;
+        background-color: #192233;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+      }
+      .select-hide {
+        display: none;
+      }
+      .select-items div:hover, .same-as-selected {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    &__header{
+        padding-bottom: 20px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+    }
+    &__form{
+        padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        @include media(576){
+            padding-top: 15px;
+        }
+        &-header{
+            padding-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-fd{
+                @include media(576){
+                    flex-direction: column;
+                    align-items: flex-start;
+                    row-gap: 5px;
+                }
+            }
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+            @include media(576){
+                font-size: 14px;
+            }
+        }
+        &-span{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #E53B35;
+            @include media(576){
+                font-size: 13px;
+            }
+        }
+    }
+}

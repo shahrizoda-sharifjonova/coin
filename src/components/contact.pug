@@ -1,0 +1,100 @@
+mixin contact()
+    .contact 
+        .contact__body.container 
+            .contact__content 
+                .contact__item 
+                    .contact__item-header 
+                        h2.contact__title.title Coin info
+                    form(action="").contact__form 
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Name
+                                span.contact__form-span Required
+                            input(type="text" placeholder="e.g Bitcoin")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Symbol
+                                span.contact__form-span Required
+                            input(type="text" placeholder="e.g BTC")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Description
+                                span.contact__form-span Required
+                            textarea(placeholder="e.g Bitcoin is a decentralized digital currency")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Market Cap in USD
+                            input(type="text" placeholder="e.g 150000")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Price in USD
+                            input(type="text" placeholder="e.g 0.006")
+                        .contact__form-item
+                            .contact__form-header.contact__form-header-fd 
+                                span.contact__form-title Launch date (YYYY-MM-DD)
+                                span.contact__form-span Required
+                            input(type="text" placeholder="e.g 2021-01-28")
+                .contact__item 
+                    .contact__item-header 
+                        h2.contact__title.title Links
+                    form(action="").contact__form 
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Website
+                            input(type="text" placeholder="e.g www.example.com")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Telegram
+                                span.contact__form-span Required
+                            input(type="text" placeholder="e.g www.example.com")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Discord
+                            input(type="text" placeholder="e.g www.example.com")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Reddit 
+                            input(type="text" placeholder="e.g www.example.com")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Logo
+                                span.contact__form-span Required
+                            input(type="text" placeholder="e.g www.example.com")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Additional information, other links and addresses
+                            textarea(placeholder="e.g www.example.com")
+                .contact__item 
+                    .contact__item-header 
+                        h2.contact__title.title Contract addresses
+                    form(action="").contact__form 
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Chain
+                                span.contact__form-span Required
+                            .custom-select 
+                                select 
+                                    option(value="0") Select 
+                                    option(value="1") Select 
+                                    option(value="2") Select 
+                                    option(value="3") Select 
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Address
+                                span.contact__form-span Required
+                            input(type="text" placeholder="enter adress")
+                .contact__item 
+                    .contact__item-header 
+                        h2.contact__title.title Contact info
+                    form(action="").contact__form 
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Contact Email
+                                span.contact__form-span Required
+                            input(type="text" placeholder="✉ Enter your email adress")
+                        .contact__form-item
+                            .contact__form-header 
+                                span.contact__form-title Contact Telegram
+                                span.contact__form-span Required
+                            input(type="text" placeholder="e.g. t.me/example")
+

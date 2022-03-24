@@ -36,4 +36,20 @@
             font-size: 12px;
         }
     }
+    &__a{        
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        @include media(576){
+            font-size: 13px;
+            font-weight: normal;
+        }
+        @include media(370){
+            font-size: 12px;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
