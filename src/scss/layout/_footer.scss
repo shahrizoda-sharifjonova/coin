@@ -77,14 +77,11 @@
         }
     }
     &__p{
-        margin-top: 154px;
+        margin-top: 80px;
         font-weight: 500;
         font-size: 16px;
         line-height: 22px;
         color: #FFFFFF;
-        @include media(1200){
-            margin-top: 100px;
-        }
         @include media(768){
             margin-top: 50px;
         }

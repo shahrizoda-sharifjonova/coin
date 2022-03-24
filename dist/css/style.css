@@ -315,7 +315,7 @@
 }
 
 .footer__p {
-  margin-top: 154px;
+  margin-top: 80px;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -324,8 +324,8 @@
 
 .top {
   background: #1C2438;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   width: 100%;
 }
 
@@ -368,19 +368,24 @@
           align-items: center;
 }
 
-.top__li:nth-of-type(3) img {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+.top__li picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.top__li:nth-of-type(4) img {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+.top__li img {
+  width: 15px;
+  height: 15px;
 }
 
-.top__li:nth-of-type(5) img {
+.top__li.up img {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -418,6 +423,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.top__dropdown-img {
+  line-height: 0;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .top__dropdown-content {
@@ -1539,6 +1551,57 @@
   text-decoration: underline;
 }
 
+.desc__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  padding-top: 40px;
+}
+
+.desc__btn {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 6px;
+     -moz-column-gap: 6px;
+          column-gap: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #16C784;
+  -webkit-box-shadow: 0px 0px 27px rgba(22, 199, 132, 0.25);
+          box-shadow: 0px 0px 27px rgba(22, 199, 132, 0.25);
+  border-radius: 8px;
+  width: 205px;
+  height: 70px;
+}
+
+.desc__info {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C6C8CD;
+  max-width: 145px;
+  width: 100%;
+}
+
 .contact {
   padding-top: 33px;
   padding-bottom: 123px;
@@ -1777,6 +1840,34 @@
   color: #E53B35;
 }
 
+.contact__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #16C784;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact__btn:hover {
+  background: #15c07f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1904,10 +1995,6 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-
-  .footer__p {
-    margin-top: 100px;
   }
 
   .top__li {
@@ -2057,6 +2144,10 @@ button {
 
   .mooner__input {
     width: 100%;
+  }
+
+  .contact {
+    padding-bottom: 64px;
   }
 
   .contact__item {
@@ -2329,6 +2420,24 @@ button {
   .desc__a {
     font-size: 13px;
     font-weight: normal;
+  }
+
+  .desc__bottom {
+    padding-top: 30px;
+  }
+
+  .desc__btn {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .desc__info {
+    font-size: 14px;
+  }
+
+  .contact {
+    padding: 30px 0;
   }
 
   .contact__item-header {
