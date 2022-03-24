@@ -200,15 +200,15 @@
 
 
 
-@media (prefers-color-scheme: dark) {
+html.dark{ 
     .quotes__items{ 
-        background: #191F30;
+        background: #191F30; 
         color: white; 
-    }
-    .quotes__subtitle,
-    .quotes__desc,
-    .quotes__p,
-    .quotes__symbol-p{
-        color: rgba(255, 255, 255, 0.85);
-    }
-}          
+    } 
+    .quotes__subtitle, 
+    .quotes__desc, 
+    .quotes__p, 
+    .quotes__symbol-p{ 
+        color: rgba(255, 255, 255, 0.85); 
+    } 
+} 

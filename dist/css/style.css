@@ -1179,6 +1179,18 @@
   margin-right: 7px;
 }
 
+html.dark .quotes__items {
+  background: #191F30;
+  color: white;
+}
+
+html.dark .quotes__subtitle,
+html.dark .quotes__desc,
+html.dark .quotes__p,
+html.dark .quotes__symbol-p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 .coins {
   padding-bottom: 64px;
 }
@@ -2537,19 +2549,5 @@ button {
 @media (max-width: 360px) {
   .footer__p {
     margin-top: 30px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .quotes__items {
-    background: #191F30;
-    color: white;
-  }
-
-  .quotes__subtitle,
-  .quotes__desc,
-  .quotes__p,
-  .quotes__symbol-p {
-    color: rgba(255, 255, 255, 0.85);
   }
 }
